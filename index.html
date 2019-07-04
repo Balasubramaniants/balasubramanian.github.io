@@ -1,1 +1,39 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Javascript</title>
+  </head>
+  <body>
+    <h1>Welcome to Javascript</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()" >click to display date and time</button>
+
+    <br>
+    <p id='demo'></p>
+
+
+  <p>To turn on the light </p>
+
+  <button type="button"  onclick="document.getElementById('img1').src='on.gif' ">Turn on the bulb</button>
+
+  <img src="off.gif" id='img1' style="width:100px" >
+
+  <button type="button"  onclick="document.getElementById('img1').src='off.gif' ">Turn off the bulb</button>
+
+  <script type="text/javascript">
+    var num1 = window.prompt("Enter the first number",'Num 1');
+    var num2 = window.prompt("Enter the second number", 'Num 2');
+    var tot ;
+    n1 = parseInt(num1);
+    n2 = parseInt(num2);
+
+    tot = n1 + n2;
+    window.alert("Total is :" + tot );
+
+  </script>
+
+
+
+
+  </body>
+</html>
