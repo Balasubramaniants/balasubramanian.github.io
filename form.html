@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <style media="screen">
+      table,th,td {
+
+        border-spacing: 10px;
+
+      }
+    </style>
+
+    <script type="text/javascript">
+
+      function validate() {
+        var name = f1.name.value;
+        var email = f1.email.value;
+
+
+        if(name == "" || Number.isNaN(name)) {
+          alert("Name must be filled out");
+        }
+
+      }
+
+    </script>
+
+  </head>
+  <body align='center'>
+    <h1>Form Validation</h1>
+    <hr>
+
+    <form name=f1  method="post">
+        <table align='center' border="0" >
+          <tr>
+            <th>Name  </th>
+            <td><input type="text" name="name" placeholder="Enter Name"> </td>
+          </tr>
+
+          <tr>
+            <br>
+            <th>E-Mail </th>
+            <td><input type="email" name="email" placeholder="Enter E-Mail"> </td>
+          </tr>
+
+          <tr>
+            <th>User-name </th>
+            <td><input type="text" name="username" placeholder="Enter username"> </td>
+          </tr>
+
+          <tr>
+            <th>Gender </th>
+            <td><input type="radio" name="m">Male <input type="radio" name="m">Female</td>
+          </tr>
+
+          <tr>
+            <th>Languages Known</th>
+            <td><input type="checkbox" name="e" >English
+                <input type="checkbox" name="t" >Tamil
+                <input type="checkbox" name="h" >Hindi
+                <input type="checkbox" name="f" >French
+             </td>
+          </tr>
+
+          <tr>
+            <th>Computer Languages</th>
+            <td><select name="cl" >
+              <option value="">C++</option>
+              <option value="">C</option>
+              <option value="">Python</option>
+              <option value="">Java</option>
+              <option value="">Javascript</option>
+            </select> </td>
+          </tr>
+
+        </table>
+        <br>
+        <br>
+        <input type="button" name="sub" value="Submit" onclick="validate()">
+        <input type="reset" name="res" value="Reset">
+    </form>
+  </body>
+</html>
